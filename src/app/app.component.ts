@@ -28,4 +28,10 @@ export class AppComponent {
     this.choicies.push(daily);
     this.deleteDaily(daily);
   }
+
+  removeDaily(choice:Daily) {
+    this.choicies = this.choicies.filter( a => a != choice);
+    this.dailies.push(choice);
+   // this.deleteDaily(daily);
+  }
 }

@@ -20,3 +20,8 @@
     height: min-content;
     max-height: 2em;
 }
+
+.tafel{
+background-color: black;
+color: white;
+}

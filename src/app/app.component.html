@@ -356,15 +356,29 @@
 
   <!-- main -->
 
+  <div class="card-container" *ngFor="let choice of choicies">
+
+    <div class="card tafel" style="background-color: black;">
+      <div style="width: 100%;">
+        {{choice.menue}}<br>EUR {{choice.preis}}
+      </div>
+      <div>
+        <button (click)="removeDaily(choice)">x</button><br>
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="card-container" *ngFor="let daily of dailies">
 
-    <div class="card">
+    <div class="card" style="background-color: red;">
       <div style="width: 100%;">
         {{daily.menue}}<br>EUR {{daily.preis}}
       </div>
       <div>
-        <button (click)="deleteDaily(daily)">x</button><br>
-        <button (click)="putDaily(daily)">v</button>
+        <button (click)="putDaily(daily)">v</button><br><button (click)="deleteDaily(daily)">x</button>
+        
       </div>
     </div>
   </div>
