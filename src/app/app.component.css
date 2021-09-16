@@ -16,6 +16,10 @@
   }
   
   
+.card-container {
+width: 100%;
+
+}
 .card-container button {
     height: min-content;
     max-height: 2em;
@@ -24,4 +28,10 @@
 .tafel{
 background-color: black;
 color: white;
+font-family: 'Indie Flower', cursive;
+font-size: 150%;
+}
+
+.menue{
+    margin-right: auto;
 }
