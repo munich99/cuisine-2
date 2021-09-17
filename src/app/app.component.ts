@@ -20,6 +20,8 @@ export class AppComponent {
 
   choicies : Daily[] =[];
 
+  preview : boolean = false;
+
   deleteDaily(daily:Daily) : void{
     this.dailies = this.dailies.filter( a => a != daily)
   }
