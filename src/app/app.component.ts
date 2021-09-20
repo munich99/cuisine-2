@@ -9,6 +9,8 @@ import { Daily } from './daily'
 export class AppComponent {
   title = 'Mai Garten';
 
+  // currentItem = 'Television';
+
 
   dailies : Daily[] =[{
     menue: 'Ma-Po Tofu mit Hühnerhackfleisch',

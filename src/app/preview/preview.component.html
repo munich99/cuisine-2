@@ -1,5 +1,13 @@
-<p>preview works!</p>
-<div class="card highlight-card card-small">
-    <span>Mai Garden</span>
 
-</div>
+
+    <div class="blackboard">
+   
+        <div  *ngFor="let daily of dailies">
+              <p>
+                {{daily.menue}}<br>EUR {{daily.preis}}
+              </p>
+          </div>
+       
+    </div>
+
+
