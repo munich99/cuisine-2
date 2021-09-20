@@ -8,6 +8,9 @@ import { Daily } from './daily'
 })
 export class AppComponent {
   title = 'Mai Garten';
+  todayDate = new Date();
+  tomorrow =  this.todayDate.getDate()+2;
+
 
   // currentItem = 'Television';
 
