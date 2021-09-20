@@ -35,3 +35,11 @@ font-size: 150%;
 .menue{
     margin-right: auto;
 }
+
+svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }

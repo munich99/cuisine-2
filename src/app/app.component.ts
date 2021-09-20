@@ -7,7 +7,7 @@ import { Daily } from './daily'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cuisine';
+  title = 'Mai Garten';
 
 
   dailies : Daily[] =[{
@@ -35,5 +35,9 @@ export class AppComponent {
     this.choicies = this.choicies.filter( a => a != choice);
     this.dailies.push(choice);
    // this.deleteDaily(daily);
+  }
+
+  showPreview(){
+    this.preview = !this.preview;
   }
 }
