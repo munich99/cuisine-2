@@ -7,7 +7,7 @@ import { Daily } from './daily'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Mai Garten';
+  title = 'Unsere Tageskarte';
 
   dailies : Daily[] =[{
     menue: 'Ma-Po Tofu mit Hühnerhackfleisch',
@@ -32,7 +32,9 @@ export class AppComponent {
 
   choicies : Daily[] =[];
 
-  preview : boolean = false;
+  preview : boolean = true;
+
+  login: boolean = false;
 
   deleteDaily(daily:Daily) : void{
     this.dailies = this.dailies.filter( a => a != daily)
@@ -49,13 +51,17 @@ export class AppComponent {
    // this.deleteDaily(daily);
   }
 
-  showPreview(){
-    this.preview = !this.preview;
-    // console.log("liste" + this.dailies)
-  }
 
-  loginMessage(messageFromLogin: string) {
+
+  loginMessage(messageFromLogin: boolean) {
     console.log(messageFromLogin+ "11");
+    this.preview = messageFromLogin;
+    
+    //call service/api to post message
+  }
+  loginMessageXX(messageFromLogin: boolean) {
+    console.log(messageFromLogin+ "12");
+    this.login = messageFromLogin; 
     
     //call service/api to post message
   }
