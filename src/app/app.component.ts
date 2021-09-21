@@ -53,4 +53,10 @@ export class AppComponent {
     this.preview = !this.preview;
     // console.log("liste" + this.dailies)
   }
+
+  loginMessage(messageFromLogin: string) {
+    console.log(messageFromLogin+ "11");
+    
+    //call service/api to post message
+  }
 }

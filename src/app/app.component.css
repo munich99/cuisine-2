@@ -43,3 +43,11 @@ svg#clouds {
     z-index: -10;
     width: 1920px;
   }
+
+  .toolbar span{
+    font-weight: normal;
+    font-size: 14px;
+  }
+  .toolbar svg{
+    margin: 0 10px 0;
+  }
