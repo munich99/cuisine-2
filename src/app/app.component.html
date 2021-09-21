@@ -331,39 +331,42 @@
 
  
 
-  <app-preview *ngIf="preview" [dailies]="choicies"></app-preview>
+  <app-preview *ngIf="preview" [Dailies]="choicies"></app-preview>
 
   <!-- main -->
   <div *ngIf="!preview">
 
-  <div class="card-container" *ngFor="let choice of choicies">
-
-    <div class="card tafel" style="background-color: black;" >
-      <div style="margin-right: auto;">
-        {{choice.menue}}<br>EUR {{choice.preis}}
+    <div class="card-container" *ngIf="!choicies?.length">
+      <div class="card tafel" style="background-color: black;" >
+        <div style="margin-right: auto;">
+          noch leer
+        </div>
       </div>
-      <div>
-        <button (click)="removeDaily(choice)">x</button><br>
+    </div>
+
+    <div class="card-container" *ngFor="let choice of choicies">
+      <div class="card tafel" style="background-color: black;" >
+        <div style="margin-right: auto;">
+          {{choice.menue}}<br>EUR {{choice.preis}}
+        </div>
+        <div>
+          <button (click)="removeDaily(choice)">x</button><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container"  *ngFor="let daily of dailies">
+      <div class="card" style="background-color: red;">
+        <div class="menue">
+          {{daily.menue}}<br>EUR {{daily.preis}}
+        </div>
+        <div>
+          <button (click)="putDaily(daily)">v</button><br><button (click)="deleteDaily(daily)">x</button>
+        </div>
       </div>
     </div>
 
   </div>
-
-
-
-  <div class="card-container"  *ngFor="let daily of dailies">
-
-    <div class="card" style="background-color: red;">
-      <div class="menue">
-        {{daily.menue}}<br>EUR {{daily.preis}}
-      </div>
-      <div>
-        <button (click)="putDaily(daily)">v</button><br><button (click)="deleteDaily(daily)">x</button>
-      </div>
-    </div>
-  </div>
-
-</div>
 
   <!-- Footer -->
   <footer>

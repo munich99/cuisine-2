@@ -1,14 +1,15 @@
-
-
     <div class="blackboard">
-       
-   
-        <div  *ngFor="let daily of dailies">
-              <p>
-                {{daily.menue}}<br>EUR {{daily.preis}}
-              </p>
-          </div>
-       
+        <div *ngFor="let daily of Dailies">
+            <p>
+              {{daily.menue}}<br>EUR {{daily.preis}}
+            </p>
+        </div>       
+
+        <div *ngIf="!Dailies?.length">
+            <p>
+              &nbsp;
+            </p>
+        </div>       
     </div>
 
 

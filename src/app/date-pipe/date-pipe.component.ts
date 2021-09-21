@@ -11,6 +11,8 @@ export class DatePipeComponent implements OnInit {
   tomorrow =  this.todayDate.getDate()+2;
   weekday =  this.todayDate.getDay();
 
+  wochentag = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag' ];
+
   constructor() { }
 
   ngOnInit(): void {

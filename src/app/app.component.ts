@@ -11,7 +11,20 @@ export class AppComponent {
 
   dailies : Daily[] =[{
     menue: 'Ma-Po Tofu mit Hühnerhackfleisch',
-    preis: 8.5},
+    preis: 6.9
+    }, 
+    {
+    menue: 'Gekochtes Fischfilet (scharf)',
+    preis: 7.5,
+    },
+    {
+    menue: 'Acht Schätze',
+    preis: 8.5,
+    },
+    {
+    menue: 'Hühnerfleisch m. schwarzen Bohnen + Gemüse',
+    preis: 7.9,
+    },
     {
     menue: 'Bärlauchtasche',
     preis: 3,
@@ -27,7 +40,7 @@ export class AppComponent {
 
   putDaily(daily:Daily) {
     this.choicies.push(daily);
-    this.deleteDaily(daily);
+    this.deleteDaily(daily);      
   }
 
   removeDaily(choice:Daily) {
@@ -38,5 +51,6 @@ export class AppComponent {
 
   showPreview(){
     this.preview = !this.preview;
+    // console.log("liste" + this.dailies)
   }
 }

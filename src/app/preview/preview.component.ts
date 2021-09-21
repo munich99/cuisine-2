@@ -8,12 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PreviewComponent implements OnInit {
 
   title = 'Speise 1';
-  @Input() dailies:any // decorate the property with @Input()
+  @Input() Dailies:any // decorate the property with @Input()
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.dailies);
+    console.log(this.Dailies);
   }
 
 }
