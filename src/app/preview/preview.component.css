@@ -2,10 +2,13 @@
   width: 100%;     
 }
 
+.menue, .blackboard  {
+  width: 680px;
+  margin: 7% auto;
+}
+
   .blackboard {
-    width: 680px;
-    
-    margin: 7% auto;
+    margin-bottom:3em!important;
     border: tan solid 12px;
     border-top: #bda27e solid 12px;
     border-left: #b19876 solid 12px;
@@ -21,14 +24,30 @@
 .blackboard p{
   text-align: center;
 }
+.menue{
+margin-bottom:0px;
+}
+
+ol.menue{
+margin-top:0px;
+}
+
+.menue li div:nth-child(odd) {
+  float: left;
+}
+.menue li div:nth-child(even) {
+  float: right;
+}
 
 @media screen and (max-width: 767px) {
-  .blackboard {
+  .blackboard, .menue {
     width: 90%;
     display: flex;
   }
 
 }
+
+
 
 
 

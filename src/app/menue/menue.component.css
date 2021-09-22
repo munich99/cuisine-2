@@ -1,0 +1,47 @@
+      :host {     
+        width: 100%;   
+        text-align: center;  
+      }
+
+      .menue li div:nth-child(odd) {
+        float: left;
+        width: 80%;
+         }
+         .menue li div:nth-child(even) {
+           float: left;
+           width: 20%;
+         }
+      
+    
+    ol.menue, table.menue{
+  display: inline-block;
+  text-align: left;
+    }
+    th {
+        text-align: center;
+    }
+
+    tr td:nth-child(3){
+        white-space: nowrap;
+    }
+    tr td:nth-child(1){
+        vertical-align: baseline;
+    }
+
+
+       /* 
+
+  margin-top:0px;
+ 
+      
+      .menue  {
+        margin-bottom:0px;
+        width: 680px;
+        margin: 7% auto;
+      }    
+      
+      @media screen and (max-width: 767px) {
+      .menue {
+        width: 90%;
+        display: flex;
+      }   }    */
