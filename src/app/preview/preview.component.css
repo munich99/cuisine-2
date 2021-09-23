@@ -39,10 +39,14 @@ margin-top:0px;
   float: right;
 }
 
+.menue p {
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 767px) {
   .blackboard, .menue {
     width: 90%;
-    display: flex;
+
   }
 
 }

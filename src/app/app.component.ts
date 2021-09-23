@@ -9,7 +9,8 @@ import { Daily } from './daily'
 export class AppComponent {
   title = 'Unsere Tageskarte';
 
-  dailies : Daily[] =[{
+  dailies : Daily[] =[
+    {
     menue: 'Ma-Po Tofu mit Hühnerhackfleisch',
     preis: 6.9
     }, 
@@ -25,12 +26,15 @@ export class AppComponent {
     menue: 'Hühnerfleisch m. schwarzen Bohnen + Gemüse',
     preis: 7.9,
     },
+
+];
+
+  choicies : Daily[] =[
     {
     menue: 'Bärlauchtasche',
     preis: 3,
-  }];
-
-  choicies : Daily[] =[];
+    }
+  ];
 
   preview : boolean = true;
 
@@ -65,4 +69,8 @@ export class AppComponent {
     
     //call service/api to post message
   }
+  logOut(){
+    this.login= false;
+  }
+  
 }

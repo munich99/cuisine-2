@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input} from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -9,6 +9,7 @@ export class LoginComponent implements OnInit {
   @Output() logInStatus = new EventEmitter();
   @Output() logInStatusTrue = new EventEmitter();
   // new EventEmitter<{name:string, age:number}>();
+  //@Input() logOutstatus:boolean;
   
 
   login:boolean=false;
@@ -16,19 +17,17 @@ export class LoginComponent implements OnInit {
 
   constructor() {   }
 
-  ngOnInit(): void {  
-    console.log(this.login + "anfang");
-   
-  } 
+  ngOnInit(): void {    } 
 
   logIn() {
     this.login = !this.login;
     this.logInStatus.emit(this.login);
-    console.log(this.login + "ende");
+    // console.log(this.login + "ende");
   }
 
   logInYes(){
     this.loginPermission = true;
     this.logInStatusTrue.emit(this.loginPermission);
+    this.login = !this.login;
   }
 }

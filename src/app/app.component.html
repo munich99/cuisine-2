@@ -1,6 +1,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 <style>
   :host {
@@ -202,11 +203,7 @@
 
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-  <!--img
-    width="40"
-    alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-  /-->
+
 
   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 101.678 101.678">
     <title>Rocket Ship</title>
@@ -221,39 +218,23 @@
   </g>
   </svg>
 
-  <h3>Mai Garten <br><span>Ohlmüllerstraße 24</span></h3>
+  <h3 class="hausschrift">Mai Garten<br><span>Ohlmüllerstraße 24</span></h3>
     <div class="spacer"></div>
     <p style="text-align: right; margin-right: 10px;">Telefon<br>089 624 23 888</p>
 </div>
 
-  <!-- adresse -->
+  <!-- adresse 
+  <path d="M0 0h24v24H0z" fill="none"/>
+<path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>-->
  
  
 
 <div class="content" role="main">
 
 
-  <!-- Highlight Card -->
-  <!--div class="card highlight-card card-small">
 
-    <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
-      <title>Rocket Ship</title>
-      <g id="Group_83" transform="matrix(1,0,0,1,-141,-696)">
-        <g id="Ellipse_8" transform="matrix(1,0,0,1,141,696)">
-            <circle cx="50.839" cy="50.839" r="50.839" style="fill:rgb(0, 221, 66);"/>
-        </g>
-        <g transform="matrix(0.827059,0.22161,-0.22161,0.827059,-303.86,187.443)">
-            <path d="M726.354,446.654C716.26,446.654 707.954,454.96 707.954,465.054C707.975,473.573 713.909,481.018 722.21,482.936C720.767,481.423 719.552,479.701 718.619,477.817C719.127,477.124 719.725,476.503 720.399,475.969C721.125,477.629 722.092,479.17 723.264,480.544C723.132,479.625 723.062,478.698 723.053,477.769C723.06,466.729 731.855,457.518 742.883,457.003C739.81,450.687 733.377,446.66 726.353,446.654L726.354,446.654ZM743.593,459.37C741.75,459.396 739.921,459.699 738.168,460.269C730.085,462.917 724.841,470.841 725.563,479.316C726.008,478.486 726.505,477.686 727.059,476.922C727.74,475.998 728.498,475.132 729.323,474.333C730.15,474.598 730.938,474.974 731.665,475.45C730.302,476.66 729.131,478.065 728.184,479.615C730.986,478.26 734.057,477.551 737.169,477.541C745.802,477.545 753.574,482.923 756.621,491.001C761.676,486.126 763.518,478.765 761.354,472.083C758.868,464.431 751.638,459.256 743.593,459.37L743.593,459.37ZM706.317,459.558C699.356,460.525 693.532,465.4 691.355,472.083C690.758,473.919 690.454,475.838 690.454,477.769C690.454,485.719 695.608,492.812 703.169,495.269C711.252,497.873 720.138,494.56 724.543,487.3C722.677,488.19 720.687,488.806 718.631,489.109C718.124,488.412 717.713,487.649 717.41,486.842C719.247,486.661 721.043,486.203 722.739,485.49C712.857,483.746 705.577,475.088 705.554,465.054C705.562,463.196 705.819,461.347 706.319,459.557L706.317,459.558ZM736.649,479.948C734.381,480.025 732.147,480.52 730.06,481.409C732.117,481.783 734.113,482.459 735.976,483.431C735.981,484.294 735.868,485.153 735.643,485.986C734.04,485.052 732.308,484.37 730.507,483.955C734.233,487.817 736.324,492.974 736.338,498.341C736.337,504.652 733.464,510.631 728.537,514.575C734.735,517.874 742.302,517.349 747.986,513.227C752.747,509.768 755.57,504.226 755.57,498.341C755.57,494.455 754.34,490.668 752.056,487.525C748.489,482.616 742.715,479.776 736.649,479.948L736.649,479.948ZM729.471,486.386C729.742,488.438 729.714,490.524 729.368,492.575C728.546,492.846 727.692,493.006 726.827,493.049C727.228,491.228 727.345,489.359 727.185,487.508C723.592,494.288 716.528,498.551 708.855,498.569C704.795,498.564 700.823,497.369 697.433,495.134C696.206,502.052 699.043,509.093 704.724,513.227C712.89,519.159 724.491,517.322 730.424,509.156C735.394,502.283 734.998,492.82 729.471,486.386L729.471,486.386Z" style="fill:white;fill-rule:nonzero;"/>
-            <path d="M730.522,472.294C729.791,472.326 729.113,472.69 728.683,473.282C728.385,473.692 728.224,474.186 728.224,474.693C728.224,475.461 728.593,476.184 729.214,476.635C730.279,477.408 731.792,477.169 732.566,476.104C732.864,475.694 733.024,475.2 733.024,474.693C733.024,473.925 732.656,473.202 732.034,472.751C731.596,472.432 731.063,472.271 730.522,472.294L730.522,472.294ZM719.274,474.277C718.791,474.29 718.322,474.449 717.931,474.733C717.309,475.185 716.941,475.908 716.941,476.676C716.941,477.182 717.101,477.677 717.399,478.087C717.851,478.708 718.574,479.077 719.342,479.077C719.848,479.077 720.343,478.916 720.753,478.618C721.374,478.167 721.742,477.444 721.742,476.676C721.742,476.169 721.582,475.675 721.284,475.265C720.818,474.625 720.065,474.255 719.274,474.277L719.274,474.277ZM736.119,482.369C735.045,482.323 734.065,483.003 733.733,484.026C733.655,484.265 733.615,484.516 733.615,484.768C733.615,485.805 734.287,486.73 735.273,487.051C736.526,487.457 737.891,486.761 738.297,485.508C738.703,484.257 738.008,482.892 736.756,482.485C736.55,482.418 736.335,482.379 736.119,482.369L736.119,482.369ZM717.718,485.666C717.478,485.67 717.239,485.709 717.011,485.783C715.759,486.19 715.064,487.555 715.47,488.807C715.79,489.794 716.715,490.467 717.753,490.467C718.005,490.467 718.255,490.427 718.495,490.349C719.481,490.029 720.153,489.104 720.153,488.067C720.153,487.814 720.114,487.564 720.036,487.324C719.711,486.326 718.768,485.651 717.718,485.666L717.718,485.666ZM728.095,490.652C726.779,490.652 725.695,491.736 725.695,493.052C725.695,494.369 726.779,495.452 728.095,495.452C729.412,495.452 730.495,494.369 730.495,493.052C730.495,491.736 729.412,490.652 728.095,490.652Z" style="fill:rgb(255,204,0);fill-rule:nonzero;"/>
-        </g>
-    </g>
-    </svg>
-    <span style="font-size: 1.17em;">{{ title }}</span>
-
-    
-  </div-->
   <h1 style="color: #17771f;">Unsere Tageskarte</h1>
-  <!--div style="color:rgb(15, 15, 16); ">Preise gültig von Mo-Fr, 11:30 - 15:00</div-->
+ 
   
   <!-- Resources -->
 
@@ -261,9 +242,11 @@
   <div class="card-container" *ngIf="login">
 
 
-    <button class="card" *ngIf="login">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
-      <span>Tagekarte</span>
+    <button class="card" *ngIf="login" (click)="logOut()">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+      </svg>
+      <span>Abmelden</span>
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
     </button>
 
@@ -279,12 +262,17 @@
 
   <app-preview *ngIf="preview" [Dailies]="choicies"></app-preview>
 
-  <img src="../assets/drachen.svg" alt="">
+  <img src="../assets/drachen.svg" 
+  alt=""
+  *ngIf="!login"
+  style="max-width: 680px; width: auto;"
+  >
+  <div style="color:rgb(15, 15, 16); ">Preise gültig von Mo-Fr, 11:30 - 15:00</div>
 
 
     <h1 style="color: #17771f; margin-top: 40px;">Unserer Tägliches Menü</h1>
 
-  <app-menue></app-menue>
+  
 
   <!-- main -->
   <div *ngIf="login">
@@ -314,16 +302,19 @@
           {{daily.menue}}<br>EUR {{daily.preis}}
         </div>
         <div>
-          <button (click)="putDaily(daily)">v</button><br><button (click)="deleteDaily(daily)">x</button>
+          <button (click)="putDaily(daily)">v</button><!--br><button (click)="deleteDaily(daily)">x</button-->
         </div>
       </div>
     </div>
 
   </div>
 
-  <!-- Footer -->
+  <app-menue></app-menue>
+
+  <!-- Footer [logOutstatus]="false"  -->
   <footer>     
     <app-login 
+    
     (logInStatus)="loginMessage($event)"
     (logInStatusTrue) ="loginMessageXX($event)"
     >
