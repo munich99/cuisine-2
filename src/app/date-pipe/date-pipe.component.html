@@ -1,5 +1,8 @@
-<h3>{{wochentag[weekday]}}, {{todayDate | date : 'dd-MM-yyyy'}}</h3>
 
 
-<!--p>morgen {{tomorrow}}</p-->
+<h3><span (click)="beforeDay()">&#9664;</span> {{wochentag[weekday]}}, {{todayDate | date : 'dd-MM-yyyy'}} <span (click)="nextDay()">&#9654;</span></h3>
+
+
+<!--p>morgen {{tomorrow}}</p--> 
+
 
