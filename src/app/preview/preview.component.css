@@ -20,6 +20,8 @@
     color: rgba(238, 238, 238, 0.7);
     font-family: 'Indie Flower', cursive;
     font-size: 2.2em;
+
+    position: relative;
 }
 .blackboard p{
   text-align: center;
@@ -46,9 +48,33 @@ margin-top:0px;
 @media screen and (max-width: 767px) {
   .blackboard, .menue {
     width: 90%;
-
   }
+}
+/*
+.narrow::after {
+  content: '>';
+  position: absolute; 
+  top: 45%;
+  right: 10px;
+}
+.narrow::before{
+  content: '<';
+  position: absolute; 
+  top: 45%;
+  left: 10px;
+}
+*/
+.narrow, .rarrow{
+  color: #111;
+  position: absolute; 
+  top: 45%;
 
+}
+.rarrow{
+  right: -2em;
+}
+.narrow{
+  left: -2em;
 }
 
 
